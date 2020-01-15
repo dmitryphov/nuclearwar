@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Old+Standard+TT&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Портфолио Junior верстальщика</title>
   </head>
@@ -10,7 +11,8 @@
   <body>
     <header class="page-header">
       <div class="container">
-        <p>dmitriyphov@mail.ru</p>
+        <a href="mailto:dmitriyphov@mail.ru"><span class="header-email">dmitriyphov@mail.ru</span></a>
+        <a href="tel:+79999999999"><span class="header-phone">+7 999 999 99 99</span></a>
       </div>
     </header>
 
@@ -24,10 +26,22 @@
     <section class="intro">
       <div class="container">
         <h2 class="subheading">Давайте познакомимся</h2>
+        <figure>
+          <img src="img/my_photo.jpg" height="600" alt="my_photo">
+        </figure>
         <h3>Пара слов о себе</h3>
         <p>Дмитрий. 27 лет</p>
         <h3>Чем могу быть полезен</h3>
         <p>Сверстаю сайт</p>
+        <div class="skills">
+          <h3>Мои навыки</h3>
+          <dl class="skills_list">
+            <dt class="skill-html"><div>HTML</div></dt>
+            <dd class="level"><div style="width: 60%;">60%</div></dd>
+            <dt class="skill-css"><div>CSS</div></dt>
+            <dd class="level"><div style="width: 60%;">40%</div></dd>
+          </dl>
+        </div>
       </div>
     </section>
 
@@ -35,6 +49,10 @@
       <div class="container">
         <h2 class="subheading">Мои работы</h2>
         <h3>Сайт инструктора Кекса</h3>
+        <figure class="project-image">
+          <img src="img/project.jpg" width="928" height="536" alt="Cайт инструктора Кекса">
+        </figure>
+        <a class="button" href="source/project/index.html">Открыть страницу</a>
         <p>Небольшой лендинг о школе для начинающих.</p>
         <h3>Блог начинающего верстальщика</h3>
         <p>Статический блог про обучение HTML и CSS.</p>
@@ -42,7 +60,8 @@
     </section>
     <footer class="page-footer">
       <div class="container">
-        <p>dmitriyphov@mail.ru</p>
+        <a href="mailto:dmitriyphov@mail.ru"><span class="footer-email">dmitriyphov@mail.ru</span></a>
+        <a href="tel:+79999999999"><span class="footer-phone">+7 999 999 99 99</span></a>
       </div>
     </footer>
   </body>
